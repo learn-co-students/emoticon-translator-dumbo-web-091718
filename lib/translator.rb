@@ -13,7 +13,7 @@ def load_library(file_path)
    end
    library
 end 
-
+#APPROACH with bracket index 
 # def load_library(file_pah)
 #   emoticon_lib = {'get_meaning'  => {},
 #                   'get_emoticon' => {} }
@@ -25,7 +25,6 @@ end
 #   end
 #   emoticon_lib
 # end
-
 
 def get_japanese_emoticon(file_path, emoticon)
  library = load_library(file_path)
@@ -40,6 +39,8 @@ def get_japanese_emoticon(file_path, emoticon)
 end
  
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file_path, emoticon )
+   # code goes here
+  library = load_library(file_path)
+   english_emo = library["get_meaning"][emoticon]
 end
